@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Based Education System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="top_bar">
+        <!-- Back button and home button grouped for alignment -->
+        <div class="button-group">
+            
+            <a href="Arithmetic.html"><button type="button">Back</button></a>
+            <a href="/index.html"><button type="button">Home</button></a>
+            <a href="Input_and_output.html"><button type="button">Next</button></a></li>
+        </div>
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">Chapter 2: Strings</span></h1>
+            </div>
+        </header>
+        
+        <div id="mobile-menu-container">
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>Strings</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+            
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            
+                <div class="middle-content"> <!-- Container for middle content -->
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+                        <li><a href="Arithmetic.html"><button type="button">Back</button></a></li>
+                        <li><a href="/index.html"><button type="button">Home</button></a></li>
+                        <li><a href="Input_and_output.html"><button type="button">Next</button></a></li>                    
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>                 
+                    </label>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+<main>
+<div id="String type">
+    <h2>The String Type</h2>
+    <hr>
+    <p>
+        Strings are something you have already been using. You just didn't know what they were called. 
+        <pre class="code_snippet_examples">
+<code>print("tacos")</code></pre>
+This is an example of a String. The String part is:
+<pre class="code_snippet_examples">
+<code>food = "tacos"</code></pre>
+String literal is just a particular String just like a number literal would be something like 7.
+<pre class="code_snippet_examples"><code>print("This is a string"+' so is this.')</code></pre>
+You can get the length of a string using len()
+<div class="coding_sandbox">
+    <iframe src="https://trinket.io/embed/python/29a1d38bb6" 
+    width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+</p>
+</div>
+<div id="Concatenation and Repetition">
+    <h2>    
+        Concatenation and Repetition
+    </h2>
+    <hr>
+    <p>
+        Let's say you have someone's name is "Marry" and whose last name is "Jane". 
+        If I was to add them together what do you think would happen?
+        <br>
+        <div class="coding_sandbox">
+            <iframe src="https://trinket.io/embed/python/61b82c8452" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+        <br>
+        Did it do what you thought it would do?
+        <br>
+        what about if I was to do something like 5 * "Pop..."? 
+        What do you think will happen?
+        <br>
+        <div class="coding_sandbox">
+            <iframe src="https://trinket.io/embed/python/b0b7ecd77e" 
+            width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+        <br>
+        Now, it will now allow you to add 10 and "Apples". 
+        This throws an error because you can only concatenate strings.
+        You can get around this by changing the number 10 to a string using str()
+        <br>
+        <div>
+            <iframe src="https://trinket.io/embed/python/91ee8a0fe2" 
+            width="100%" height="275" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+        <br>
+        What about if I was to do a float like 2.5 and a int 5?
+        <div class="coding_sandbox">
+            <iframe src="https://trinket.io/embed/python/1cefbafc03" 
+            width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+    </p>
+    <div id="String methods">
+        <h2>String methods</h2>
+        <hr>
+
+        <p>
+           String methods can be useful for many reasons. 
+           For example, let's say you need to compare items and don't know how they will be typed and you don't care about the casing. 
+            <pre id="code_snippet_examples">
+<code> name= "Jeff Owen"
+</code></pre>
+            You can change it to just being upper case using .upper() you can also make the whole thing lower case using .lower():
+            <div class="coding_sandbox">
+                <iframe src="https://trinket.io/embed/python/1e1fbf06e6" 
+                width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </div>
+            The behavior of an object is given through its methods. 
+            A method, like a function, 
+            is a collection of programming instructions that carry out a particular task. 
+            But unlike a function, which is a standalone operation, 
+            a method can only be applied to an object of the type for which it was defined.
+
+        </p>
+    </div>
+
+</div>
+           
+    <div id="chat-widget">
+        <div id="chat-window">
+            <div id="messages"></div>
+            <input type="text" id="user-input" placeholder="Ask your question..." />
+            <button id="send-chat" onclick="sendMessage()">Send</button>
+            <button id="close-chat" onclick="closeChat()">Close</button>
+        </div>
+        <button id="open-chat-btn" onclick="toggleChat()">Ask Question</button>
+        <button id="open-chat-icon-btn" onclick="toggleChat()"><i class="fa-solid fa-plus fa-2xl" id="open-chat-icon"></i></button>
+    </div>
+
+    <script src="/js/sideMenu.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/aiChatBox.js"></script>
+</main>
+<footer id="footer">
+    <div id="Copyright-container">
+        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">README <i class="fa-brands fa-square-github"></i> </a>
+    </div>
+    <div id="feedback-container">
+        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+    </div>
+</footer>
+</body>
+</html>

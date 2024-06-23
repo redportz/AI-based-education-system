@@ -1,0 +1,212 @@
+[
+  {
+    "question": "What will the output be for this code snippet? Why?",
+    "codeImage": "code-photos/question1.png",
+    "code": "print(bool(0))",
+    "userAnswer": "False",
+    "explanation": "The bool() function returns False for an input value of 0, and True otherwise. Therefore, printing bool(0) prints False."
+  },
+  {
+    "question": "What will this code output if entered correctly in a Python interpreter? What does the code do?",
+    "codeImage": "code-photos/question2.png",
+    "code": "print(type(\"Hello, world!\"))",
+    "userAnswer": "str",
+    "explanation": "The type() function returns the class of whatever value is passed to it. When a string value is returned, it outputs \"str\"."
+  },
+  {
+    "question": "What type will \u201cx\u201d be?",
+    "codeImage": "code-photos/question3.png",
+    "code": "x = 8 / 2\nprint(type(x))",
+    "userAnswer": "float",
+    "explanation": "In Python, the quotient of a division is always a floating-point number, even if the numbers being divided are ints."
+  },
+  {
+    "question": "What will this code output?",
+    "codeImage": "code-photos/question4.png",
+    "code": "print(7 // 2)",
+    "userAnswer": "3",
+    "explanation": "The // operator acts as division, but discards the remainder. 7 divided by 2 is 3 with a remainder of 1, so the operation returns 3."
+  },
+  {
+    "question": "What will this code output?",
+    "codeImage": "code-photos/question5.png",
+    "code": "print(2 ** 3)",
+    "userAnswer": "8",
+    "explanation": "** acts as an exponentiation operator in Python. 2 to the power of 3 is 8."
+  },
+  {
+    "question": "What will this code output?",
+    "codeImage": "code-photos/question6.png",
+    "code": "print(\"Hello\" + \"World\")",
+    "userAnswer": "HelloWorld",
+    "explanation": "In Python, + can be used to merge strings. However, it will not automatically insert an extra space between them."
+  },
+  {
+    "question": "What will this code output?",
+    "codeImage": "code-photos/question7.png",
+    "code": "print(len(\"Hello, World!\"))",
+    "userAnswer": "13",
+    "explanation": "len() gets the amount of characters in a string. \"Hello, World!\" has 13 characters, as it counts the comma, space, and exclamation mark."
+  },
+  {
+    "question": "What will be the value of result?",
+    "codeImage": "code-photos/question8.png",
+    "code": "result = int(10.5) + float(\"5.5\")",
+    "userAnswer": "15.5",
+    "explanation": "In Python, casting a float value to int causes it to be rounded down. The float() operator can also cast a string value to int, parsing the digit characters as a numerical value."
+  },
+  {
+    "question": "What will this code print?",
+    "codeImage": "code-photos/question9.png",
+    "code": "print(\"Python\".upper())",
+    "userAnswer": "PYTHON",
+    "explanation": "The .upper() method causes all characters in a string to become uppercase."
+  },
+  {
+    "question": "What will the following code return?",
+    "codeImage": "code-photos/question10.png",
+    "code": "print(\"The price is {:.2f}\".format(19))",
+    "userAnswer": "The price is 19.00",
+    "explanation": "The .format operator will replace the text in brace brackets with the value it's passed. The .2f in the brace brackets informs Python that the value should be displayed to a minimum of 2 decimal places."
+  },
+  {
+    "question": "What will the following code print if x is 15?",
+    "codeImage": "code-photos/question11.png",
+    "code": "if x > 10:\n\tprint(\"yes\")\nelse:\n\tprint(\"no\")",
+    "userAnswer": "yes",
+    "explanation": "15 is greater than 10, so the function in the \"if\" clause is executed and the function in the \"else\" clause is skipped."
+  },
+  {
+    "question": "What will this code return if num is 5?",
+    "codeImage": "code-photos/question12.png",
+    "code": "num = 5\nif num % 2 == 0:\n\tresult = \"a\"\nelse:\n\tresult = \"b\"\nprint(result)",
+    "userAnswer": "b",
+    "explanation": "The modulo operator returns the remainder of a division operation. 5 divided by 2 is 2 with a remainder of 1, and 1 is not equal to 0, so result is made equal to \"b\"."
+  },
+  {
+    "question": "What will the output be for this code snippet if temperature is 85?",
+    "codeImage": "code-photos/question13.png",
+    "code": "temperature = 85\nif temperature > 90:\n\tprint(\"It's very hot\")\nelif temperature > 70:\n\tprint(\"It's warm\")\nelse:\n\tprint(\"It's cool\")",
+    "userAnswer": "It's warm",
+    "explanation": "85 is not greater than 90, but is greater than 70. So, the code which executes if temperature is greater than 90 is skipped, but the code which executes if it's greater than 70 is executed."
+  },
+  {
+    "question": "What does this code do?",
+    "codeImage": "code-photos/question14.png",
+    "code": "score = 75\nif score < 60:\n\tgrade = \"F\"\nelif score >= 60:\n\tgrade = \"D\"\nelif score >= 70:\n\tgrade = \"C\"\nelif score >= 80:\n\tgrade = \"B\"\nelif score >= 90:\n\tgrade = \"A\"\nprint(grade)",
+    "userAnswer": "This code assigns a grade of F to a test with a score of less than 60, and a score of D otherwise.",
+    "explanation": "This code has an error in its functionality. The clause which checks if the score is greater than or equal to 60 executes before the checks for the higher letter grades, and because they are \"elif\" clauses, they get skipped once it executes. To fix its functionality, the order of the checks for letter grades from A to D should be reversed."
+  },
+  {
+    "question": "What will the following code output if x is 12 and y is 7?",
+    "codeImage": "code-photos/question15.png",
+    "code": "if x > y and x < 10:\n\tprint(\"Yes\")\nelse:\n\tprint(\"No\")",
+    "userAnswer": "No",
+    "explanation": "12 is greater than 7, but 10 is not greater than 12."
+  },
+  {
+    "question": "What will the following code print?",
+    "codeImage": "code-photos/question16.png",
+    "code": "for i in range(3):\n\tprint(i)",
+    "userAnswer": "0\n1\n2",
+    "explanation": "The range() function returns a list of numbers up to, but not including, the argument given. So, range(3) returns [0, 1, 2], and each one gets printed sequentially."
+  },
+  {
+    "question": "What does this code snippet do?",
+    "codeImage": "code-photos/question17.png",
+    "code": "total = 0\nfor i in range(1, 6):\n\ttotal += i\nprint(total)",
+    "userAnswer": "15",
+    "explanation": "range(1, 6) returns the list [1, 2, 3, 4, 5]. 1 + 2 + 3 + 4 + 5 = 15."
+  },
+  {
+    "question": "What will be the output of this code?",
+    "codeImage": "code-photos/question18.png",
+    "code": "n = 5\nwhile n > 0:\n\tprint(n)\n\tn -= 1",
+    "userAnswer": "5\n4\n3\n2\n1",
+    "explanation": "The print function executes before n is decremented, so its initial value of 5 will be printed and its final value of 0 will not be printed."
+  },
+  {
+    "question": "What does this code do?",
+    "codeImage": "code-photos/question19.png",
+    "code": "for char in \"Python\":\n\tif char == \"h\":\n\t\tbreak\n\tprint(char)",
+    "userAnswer": "P\ny\nt",
+    "explanation": "This code iterates over each character in the string \"Python\". If the character is \"h\", it immediately halts execution. Otherwise, it prints the character."
+  },
+  {
+    "question": "What will this code output?",
+    "codeImage": "code-photos/question20.png",
+    "code": "for i in range(1, 10):\n\tif i % 2 == 0:\n\t\tcontinue\n\tprint(i)",
+    "userAnswer": "1\n3\n5\n7\n9",
+    "explanation": "The \"continue\" keyword stops execution of the loop's current iteration, but allows further iterations to happen. This code skips over even numbers (ones which equate to 0 when taken modulo 2), but prints odd ones."
+  },
+  {
+    "question": "What does this function return when called with 5?",
+    "codeImage": "code-photos/question21.png",
+    "code": "def function(x):\n\ty = 7\n\tresult = 23\n\treturn x * x\n\nresult = function(5)\nprint(result)",
+    "userAnswer": "25",
+    "explanation": "This function multiplies the argument given by itself and returns it, acting as an implementation of squaring a number."
+  },
+  {
+    "question": "What will be the output of this code?",
+    "codeImage": "code-photos/question22.png",
+    "code": "def greet(name):\n\treturn \"Hello, \" + name + \"!\"\n\nprint(greet(\"Mollie\"))",
+    "userAnswer": "Hello, Mollie!",
+    "explanation": "As stated before, the + operator concatenates strings in Python. Here, the function concatenates the strings \"Hello, \", \"Mollie\", and \"!\" into the compound string \"Hello, Mollie!\", and then returns it."
+  },
+  {
+    "question": "What does the code print? Explain what the code did.",
+    "codeImage": "code-photos/question23.png",
+    "code": "def function(a, b):\n\treturn a + b\n\nprint(function(3, 4))",
+    "userAnswer": "7",
+    "explanation": "The code prints the result of function() called with a and b. function() adds a and b together and returns the result. 3 + 4 = 7."
+  },
+  {
+    "question": "What will the following code print?",
+    "codeImage": "code-photos/question24.png",
+    "code": "def function(n):\n\tif n == 0:\n\t\treturn 1\n\telse:\n\t\treturn n * function(n - 1)\n\nprint(function(4))",
+    "userAnswer": "24",
+    "explanation": "This is a recursive function. When first called on 4, it will multiply 4 by the result of itself called on 3. When called on 3, it does the same for itself called on 2, and so on until it reaches itself called on 0, at which point it just returns 1. Its effect is to multiply a number by every lower number down to 1, acting as an implementation of the factorial operator. It thus returns 4!, or 24."
+  },
+  {
+    "question": "What does this code return when called with 2 and 3?",
+    "codeImage": "code-photos/question25.png",
+    "code": "def function(a, b):\n\tresult = 1\n\tfor _ in range(b):\n\t\tresult *= a\n\treturn result\n\nprint(function(2, 3))",
+    "userAnswer": "8",
+    "explanation": "This function multiplies a by itself b times, serving as an implementation of exponentiation; function(2, 3) is equal to 2 ** 3."
+  },
+  {
+    "question": "What will this code output?",
+    "codeImage": "code-photos/question26.png",
+    "code": "x = [1, 2, 3, 4, 5]\nprint(x[2])",
+    "userAnswer": "3",
+    "explanation": "Arrays in Python start at 0. x[2] = 3."
+  },
+  {
+    "question": "What will be the value of result?",
+    "codeImage": "code-photos/question27.png",
+    "code": "items = [\"apples\", \"banana\", \"cherry\"]\nitems.append(\"date\")\nresult = items[-1]\nprint(result)",
+    "userAnswer": "date",
+    "explanation": "Accessing the index -1 of an array gets the last item in the array. \"date\" was appended to the array, so it is the last item and so gets printed."
+  },
+  {
+    "question": "What does this code do?",
+    "codeImage": "code-photos/question28.png",
+    "code": "numbers = [10, 20, 30, 40, 50]\nnumbers[1:4] = [21, 31, 41]\nprint(numbers)",
+    "userAnswer": "It prints \"[10, 21, 31, 41, 50]\"",
+    "explanation": "The second line of the code sets the array values from 1 up to (but not including) 4 as equal to its arguments."
+  },
+  {
+    "question": "What will this code print?",
+    "codeImage": "code-photos/question29.png",
+    "code": "a = (\"apples\", \"banana\", \"cherry\")\nfor b in a:\n\tprint(b)",
+    "userAnswer": "apple\nbanana\ncherry",
+    "explanation": "The loop sets b to be equal to each element of a sequentially, and then prints b. So, it prints each element of a in order, one at a time. "
+  },
+  {
+    "question": "What will the following code return?",
+    "codeImage": "code-photos/question30.png",
+    "code": "values = [1, 2, 3, 4, 5]\ndoubled_values = [x * 2 for x in values]\nprint(doubled_values)",
+    "userAnswer": "[2, 4, 6, 8, 10]",
+    "explanation": "The second line of the code loops through values, and for each element in it, sets the corresponding element of doubled_values to be equal to that element * 2."
+  }
+]

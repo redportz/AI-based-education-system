@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+    <link rel="stylesheet" href="/css/feedbackStyle.css">
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top_bar">
+        <!-- Back button and home button grouped for alignment -->
+        <div class="button-group">
+            <a href="/index.html"><button>Home</button></a>
+        </div>
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- main header -->
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">Feedback</span></h1>
+            </div>
+        </header>
+        
+
+        <!-- mobile header and side bar -->
+        <div id="mobile-menu-container">
+            
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>Feedback</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+        
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Container for buttons -->
+                <div class="middle-content"> 
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+                         <li><a href="/index.html"><button>Home</button></a></li>
+
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        
+                    </label>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div >
+<main>
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+    <form action="/submit_feedback" method="post">
+        <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+<label for="contactMethods">Preferred content method:</label><br>
+<input type="text" id="contactMethod"  name="contactMethod"><br><br>
+
+<label for="feedback">Feedback:</label><br>
+<textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+
+<button type="submit">Submit</button>
+</form>
+</div>
+
+<script src="/js/sideMenu.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/feedbackBtn.js"></script>
+</main>
+
+</body>
+</html>
+

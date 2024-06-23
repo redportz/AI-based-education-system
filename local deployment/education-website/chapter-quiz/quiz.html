@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+    <link rel="stylesheet" href="/css/Exam-quiz-front-page.css">
+    <link rel="stylesheet" href="/css/exam-question-style.css">
+    <link rel="stylesheet" href="/css/QuizStyle.css">
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top_bar">
+        
+        <!-- Place to put Buttons on top bar -->
+        <div class="button-group">
+            <a href="/index.html"><button>Home</button></a>
+        </div>
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- main header -->
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">Chapter Quiz</span></h1>
+            </div>
+        </header>
+        
+
+        <!-- mobile header and side bar -->
+        <div id="mobile-menu-container">
+            
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>Chapter Quiz</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+        
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Container for buttons -->
+                <div class="middle-content"> 
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+                         <li><a href="/index.html"><button>Home</button></a></li>
+
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                    </label>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div >
+
+        <div class='main-wrapper'>
+            <main >
+
+            
+            <div id="loading" style="display: none;">Loading...</div>
+        
+        <div class="quiz-container">
+            <h1 id="review-Header"></h1>
+        <form id="examForm">
+            <p>⚠️ Important: Once you start this quiz, you will not be able to return to previous questions or reopen the quiz after closing it.</p>
+            <div class="select-wrapper">
+                <select id="quizNumber" required>
+                    <option value="0">Select Quiz Number</option>
+                    <option value="1">Chapter 1 - Chapter 2: Quiz 1</option>
+                    
+                    <!-- <option value="2">Chapter 3: Quiz 2</option> -->
+                    <!-- Add more options as needed -->
+                </select>
+                <span class="arrow"><i class="fa-solid fa-up-long"></i></span>
+            </div>
+        
+            <input type="text" id="userId" required placeholder="Enter: Name#IdNumber"><br><br>
+            <button type="submit">Start</button>
+        
+</form>
+<!-- Feedback Modal -->
+
+<div id="quiz" style="display:none;">
+    <div id="questions"></div>
+<div id="questionButtons">
+    <button id="submitAnswer" onclick="submitAnswer()">Submit</button>
+    
+<!-- <button id="rewordBtn" onclick="rewordQuestion()">Reword</button> -->
+</div>
+</div>
+
+<div id="nextQuestion" style="display: none;">
+    <div id="Feedback"></div>
+<button id="nextBtn" onclick="nextQuestion()">Next</button>
+</div>
+
+</div class=final-grades-container>
+<div id="final-grade" style="display: none;">
+    <p id="grades-content"></p>
+<div id="Done" ><a href="/index.html"><button>Home</button></a></div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer id="footer">
+    <div id="Copyright-container">
+        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">README <i class="fa-brands fa-square-github"></i> </a>
+    </div>
+    <div id="feedback-container">
+        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+    </div>
+
+<script src="/js/theme.js"></script>
+<script src="/js/sideMenu.js"></script>
+<script src="/js/quiz.js"></script>
+
+
+</body>
+</html>

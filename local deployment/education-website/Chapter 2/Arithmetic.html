@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Based Education System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+
+</head>
+<body>    
+    <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgb(255, 255, 255); z-index: 10000;">Loading...</div>
+
+    <div id="top_bar">
+        <!-- Back button and home button grouped for alignment -->
+        <div class="button-group">
+            <a href="boolean-values.html"><button type="button">Back</button></a>
+            <a href="/index.html"><button type="button">Home</button></a>
+            <a href="Strings.html"><button type="button">Next</button></a></li>
+        </div>
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">Chapter 2: Arithmetic</span></h1>
+            </div>
+        </header>
+        
+        <div id="mobile-menu-container">
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>Arithmetic</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+            
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            
+                <div class="middle-content"> <!-- Container for middle content -->
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+                         <li><a href="Variables.html"><button>Back</button></a></li>
+                        <li><a href="/index.html"><button type="button">Home</button></a></li>
+                        <li><a href="Strings.html"><button type="button">Next</button></a></li>                    
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>                 
+                    </label>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+    <main>
+        <div id ="basic Arithmetic Operations">
+        <h2>Basic Arithmetic Operations</h2>
+        <p>Python supports the same five arithmetic operations—addition, subtraction, multiplication, division, and exponentiation—but it uses different symbols for multiplication, division, and exponentiation. Python also adheres to the basic rules of mathematics. 
+            <br>
+            To perform multiplication, you must use '*'. Unlike in traditional mathematics where you might write xy or x &times; y, in Python, you need to write x*y.</p>
+            <pre class="code_snippet_examples"><code>z = x * y</code></pre>
+            For division, you must use '/', never &divide; or a fraction bar. 
+            <br>
+            <pre class="code_snippet_examples"><code>z = x / y</code></pre>
+            </p>
+        </div>
+        <div id="Powers">
+            <h2>Powers</h2>
+            <hr>
+            <p>
+                When it comes to writing an exponent you don't use ^ instead you use ** like this y**x not y<sup>x</sup>.
+                <pre class="code_snippet_examples"><code>z= y**x</code></pre>
+                Another example could be b<sup>2</sup> = b &times; b would normal be written as b<sup>2</sup> but instead itw wrote as : 
+                <pre class="code_snippet_examples"><code>b ** 2 = b * b</code></pre>
+        </div>
+        <div id="Floor Division and Remainder">
+            <h2>Floor Division and Remainder</h2>
+            if you divide two numbers using / you'll get a float (2.5). For example:
+            <pre class="code_snippet_examples"><code>7/4</code></pre>
+            This will give you 1.75 with .75 as the fractional part. While if you use floor division.  
+        </p>
+        <pre class="code_snippet_examples"><code>7//4</code></pre>
+        <p>This turns to be 1 because everything after the "." drops off. <br>
+            Now if you use % what do you think will happen?</p>
+            <div class="coding_sandbox">
+                <iframe src="https://trinket.io/embed/python/bf8d297a30" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            </div>
+                <p>This is the remainder of whatever is left after you divide 7 by 4.</p>
+        </div>
+        <div id="Calling functions"></div>
+                    <h2>Calling functions</h2>
+                    <p>
+                        Python itself is relatively simple, but Python contains a standard library that can be used to create powerful programs.
+                        A <b>library</b> is a collection of code that has been written and translated by someone else. A <b>standard library</b> is a library that is considered part of the language and must be included with the language.
+                        Python's standard library is structured into modules, each containing related functions and data types. Before you can use functions from a module, you must explicitly import them into your program. 
+                        An example of this is the math module. To be able to square root you need to type "sqrt". 
+                        It will look something like this: 
+                    </p>
+                    <div class="coding_sandbox">
+                    <iframe src="https://trinket.io/embed/python/a2d9e45175" 
+                    width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div id="chat-widget">
+                        <div id="chat-window">
+                            <div id="messages"></div>
+                            <input type="text" id="user-input" placeholder="Ask your question..." />
+                            <button id="send-chat" onclick="sendMessage()">Send</button>
+                            <button id="close-chat" onclick="closeChat()">Close</button>
+                        </div>
+                        <button id="open-chat-btn" onclick="toggleChat()">Ask Question</button>
+                        <button id="open-chat-icon-btn" onclick="toggleChat()"><i class="fa-solid fa-plus fa-2xl" id="open-chat-icon"></i></button>
+                    </div>
+
+    <script src="/js/sideMenu.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/aiChatBox.js"></script>
+                    
+    </main>
+    <footer id="footer">
+        <div id="Copyright-container">
+            Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">README <i class="fa-brands fa-square-github"></i> </a>
+        </div>
+        <div id="feedback-container">
+            <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

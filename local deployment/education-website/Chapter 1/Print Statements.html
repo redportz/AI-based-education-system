@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Based Edition System</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/mobileStyle.css">
+        <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div id="top_bar">
+            <!-- Back button and home button grouped for alignment -->
+            <div class="button-group">
+                <a href="/index.html"><button type="button">Home</button></a>
+            <a href="Installation.html"><button type="button">Back</button></a>
+        <a href="Errors.html"><button type="button">Next</button></a>
+            </div>
+            <!-- Dark Mode Switch -->
+            <label class="switch">
+                Dark Mode <!-- Text to the left of the switch -->
+                <input type="checkbox" class="dark-mode-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    
+        <!-- main header -->
+            <header id="online-header-container">
+                <div>   
+                    <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                    <span style="vertical-align: middle;">Chapter 1: Print Statements</span></h1>
+                </div>
+            </header>
+            
+    
+            <!-- mobile header and side bar -->
+            <div id="mobile-menu-container">
+                <header id="mobile-header-container">
+                    <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                    <h3>Print Statements</h3>
+                    <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+                </header>
+                <div id="sidebar-menu" class="hidden">
+                
+                    <div class="top-content"> <!-- Container for top content -->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <label class="switch">
+                                        Dark Mode <br>
+                                        <input type="checkbox" class="dark-mode-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Container for buttons -->
+                    <div class="middle-content"> 
+                        <ul>
+                            <!-- place for buttons -->
+                            <!-- put them inside <li> </li> -->
+                            <li><a href="Installation.html"><button type="button">Back</button></a></li>
+                            <li><a href="/index.html"><button type="button">Home</button></a></li>
+                            <li><a href="Errors.html"><button type="button">Next</button></a></li>
+    
+                        </ul>
+                    </div>
+                
+                    <div class="bottom-content"> <!-- Container for bottom content -->
+                        <label>
+                            Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                            <i class="fa-brands fa-square-github"></i> README</a>
+                            <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                        </label>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
+
+<main>
+<div>  
+    <p>
+        <h2>Print</h2>
+    The <code>print</code> function in Python is used to display text or other information on the terminal or console. This function outputs the specified message to the screen, allowing you to see the results of your code. To run your first code, press the 'Run' button below.
+    <br>
+    </p>
+    <div class="coding_sandbox">
+        <iframe src="https://trinket.io/embed/python3/9c31f57fcc" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>    <hr>
+    </div>
+
+<div id="Comments" >
+<h2>Comments</h2>
+<p>
+    Comments play a crucial role in programming. <b>Comments</b> provide explanations to human readers about what your code is doing. When you run code that includes comments, the functionality of the code remains unchanged. This is because comments are ignored by the Python interpreter and have no effect on the execution of the code.<br>
+    For example, in the code snippet below, the text after the <code>#</code> symbol is a comment. It is there to help you or others understand the code, but it is not executed as part of the program.
+    </p>
+    <iframe src="https://trinket.io/embed/python/1d7b1ecb05" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe><p>
+    <b>Comments are incredibly important in programming for several reasons:</b> They make your code more understandable by explaining the purpose and functionality of different parts to anyone reading it, including your future self. This is particularly useful for maintaining and updating code over time. Comments also facilitate collaboration in team environments by ensuring everyone understands the code's intent, reducing errors and miscommunication. Additionally, comments serve as a form of documentation, describing why certain approaches were taken, outlining steps in complex algorithms, and highlighting important details that may not be immediately obvious from the code alone.
+    </p>
+</div>
+
+    
+<div id="chat-widget">
+    <div id="chat-window">
+        <div id="messages"></div>
+        <input type="text" id="user-input" placeholder="Ask your question..." />
+        <button id="send-chat" onclick="sendMessage()">Send</button>
+        <button id="close-chat" onclick="closeChat()">Close</button>
+    </div>
+    <button id="open-chat-btn" onclick="toggleChat()">Ask Question</button>
+    <button id="open-chat-icon-btn" onclick="toggleChat()"><i class="fa-solid fa-plus fa-2xl" id="open-chat-icon"></i></button>
+</div>
+
+    <script src="/js/theme.js"></script>
+    <script src="/js/sideMenu.js"></script>
+    <script src="/js/aiChatBox.js"></script>
+
+</main>
+
+<footer id="footer">
+    <div id="Copyright-container">
+        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">README <i class="fa-brands fa-square-github"></i> </a>
+    </div>
+    <div id="feedback-container">
+        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+    </div>
+</footer>
+
+    
+</body>
+</html>

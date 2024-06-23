@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Based Education System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top_bar">
+        <!-- Back button and home button grouped for alignment -->
+        <div class="button-group">
+            <a href="/index.html"><button type="button">Home</button></a>
+            <a href="Anatomy of computers.html"><button type="button">Back</button></a>
+            <a href="Installation.html"><button type="button">Next</button></a>
+        </div>
+
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- main header -->
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">Chapter 1: History of Python</span></h1>
+            </div>
+        </header>
+        
+
+        <!-- mobile header and side bar -->
+        <div id="mobile-menu-container">
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>History of Python</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+            
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Container for buttons -->
+                <div class="middle-content"> 
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+                        <li><a href="/index.html"><button type="button">Home</button></a></li>
+                        <li><a href="Anatomy of computers.html"><button type="button">Back</button></a></li>
+                        <li><a href="Installation.html"><button type="button">Next</button></a></li>
+                                              
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                    </label>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+
+<!-- background -->
+<main>
+    
+        <h2>First Computer</h2>
+        The first programable computer was the Z3. <br>
+        
+            <img class="photos" src="chapter 1 photos/History of Python/z3_first_programable_computer.jpg" alt=""><br>
+        
+        Created in 1941 by Konrad Zuse a German engineer. The Z3 had a 22-but word length. Sadly it was destroyed in a bombing raid on Berlin in 1943. <br>
+        
+        <h2>First "Bug"</h2>
+        The first "Bug" in a computer was an actual bug, a moth. On September 9, 1947 Harvard University Computer Science and engineers reported finding a literal bug in their system. Today a "bug" is known as an issue with the system. <br>
+        
+            <img class="photos" src="chapter 1 photos/History of Python/computer-bug.jpg" alt="">
+       
+        <br>
+        <h2>Python</h2>
+        
+        <p>
+            Developed in the early 1990s by Guido van Rossum, Python originated as a solution for executing repetitive tasks in computer system administration. Van Rossum, dissatisfied with the languages available at the time, which were geared towards large, high-speed programs, designed Python to easily handle smaller, less speed-critical tasks. 
+            This allowed for quick writing and updating of programs. 
+            Since its inception, Python has undergone significant evolution and is now at version 3. Van Rossum, the principal author, continues to lead its development with the help of many volunteers.
+            Python's popularity spans business, scientific, and academic applications, appealing especially to beginners due to its simple syntax compared to languages like Java, C, and C++.
+            Its interactivity facilitates experimentation, and its portability means Python programs can run unchanged across various systems including Windows, UNIX, Linux, and Macintosh. 
+        </p>
+        
+            <img class="photos" src="chapter 1 photos/History of Python/pythonlogo.png"  alt="">
+        
+    
+
+
+    <div id="chat-widget">
+        <div id="chat-window">
+            <div id="messages"></div>
+            <input type="text" id="user-input" placeholder="Ask your question..." />
+            <button id="send-chat" onclick="sendMessage()">Send</button>
+            <button id="close-chat" onclick="closeChat()">Close</button>
+        </div>
+        <button id="open-chat-btn" onclick="toggleChat()">Ask Question</button>
+        <button id="open-chat-icon-btn" onclick="toggleChat()"><i class="fa-solid fa-plus fa-2xl" id="open-chat-icon"></i></button>
+    </div>
+    
+    <script src="/js/theme.js"></script>
+    <script src="/js/sideMenu.js"></script>
+    <script src="/js/aiChatBox.js"></script>
+
+</main>
+<footer id="footer">
+    <div id="Copyright-container">
+        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">README <i class="fa-brands fa-square-github"></i> </a>
+    </div>
+    <div id="feedback-container">
+        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+    </div>
+</footer>
+        </body>
+</html>

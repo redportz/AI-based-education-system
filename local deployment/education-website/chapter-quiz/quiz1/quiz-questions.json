@@ -1,0 +1,28 @@
+[
+    {
+        "question": "What will this code output?",
+        "codeImage": "quiz1/code-photos/question1.png",
+        "code": "print(\"tacos\"+\"and\"+\"cheese\")"
+    },
+    {
+        "question": "What will this code output if entered correctly in a Python interpreter? What does the code do? ",
+        "codeImage": "quiz1/code-photos/question2.png",
+        "code": "print(type(4))"
+    },
+    {
+        "question": "What type will \"x\" be?",
+        "codeImage": "quiz1/code-photos/question3.png",
+        "code": "x=27/3\nprint(type(x))"
+    },
+    {
+        "question": "What will this code output?" ,
+        "codeImage": "quiz1/code-photos/question4.png",
+        "code": "print(17//2)"
+    },
+    {
+        "question": "What will this code output?",
+        "codeImage": "quiz1/code-photos/question5.png",
+        "code": "print(2**4)"
+    }
+
+]

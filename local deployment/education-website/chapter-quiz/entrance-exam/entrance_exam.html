@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrance Exam</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+    <link rel="stylesheet" href="/css/Exam-quiz-front-page.css">
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top_bar">
+        <!-- Back button and home button grouped for alignment -->
+        <div class="button-group">
+            <a href="/index.html"><button>Home</button></a>
+        </div>
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- main header -->
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">Entrance Exam</span></h1>
+            </div>
+        </header>
+        
+
+        <!-- mobile header and side bar -->
+        <div id="mobile-menu-container">
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>Entrance Exam</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+        
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Container for buttons -->
+                <div class="middle-content"> 
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+                         <li><a href="/index.html"><button>Home</button></a></li>
+
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                    </label>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div >
+        
+        <!-- start of content -->
+        
+        <div class='main-wrapper'>
+        
+            <main>
+                <div id="loading" style="display: none; font-size: 30px;  background-color: hsla(0, 0%, 100%, 0.5);height: 100%;width: 100%; position: fixed;top: 0;left: 0;z-index: 1000; justify-content: center;align-items: center;">Loading...</div>
+            
+            <div class="quiz-container">
+                <h1 id="review-Header"></h1>
+            <form id="examForm">
+                <p>This exam will assess your current Python knowledge and recommend parts of the course based on your performance.
+                </p>
+                <input type="text" id="userId" required placeholder="Enter: Name#IdNumber"><br><br>
+                <button type="submit">Start</button>
+            </form>
+
+            <div id="exam" style="display:none;">
+                <div id="questions"></div>
+                <button id="backBtn" style="display: none;" onclick="previousQuestion()">Back</button>
+                <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+
+        <div class="course-recommendations-and-feedback-container">
+            <div id="course-recommendations" style="display: none;">
+                <p id="course-recommendations-content"></p>
+                <div id="Done" style="display: inline;"><a href="/index.html"><button>Home</button></a></div>
+            </div>
+        </div>
+
+    </main>
+    </div>
+    <footer id="footer">
+        <div id="Copyright-container">
+            Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">README <i class="fa-brands fa-square-github"></i> </a>
+        </div>
+        <div id="feedback-container">
+            <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+        </div>
+
+    <script src="/js/theme.js"></script>
+    <script src="/js/sideMenu.js"></script>
+    <script src="/js/entrance_exam.js"></script>
+</body>
+</html>

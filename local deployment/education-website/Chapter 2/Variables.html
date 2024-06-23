@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Based Education System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobileStyle.css">
+</head>
+<body>
+
+    <div id="top_bar">
+        <!-- Back button and home button grouped for alignment -->
+        <div class="button-group">
+            <a href="/index.html"><button type="button">Home</button></a>
+            <a href="Arithmetic.html"><button type="button">Next</button></a>
+        </div>
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- main header -->
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">Chapter 2: Variables</span></h1>
+            </div>
+        </header>
+        
+
+        <!-- mobile header and side bar -->
+        <div id="mobile-menu-container">
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>Variables</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+            
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Container for buttons -->
+                <div class="middle-content"> 
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+                        <li><a href="/index.html"><button type="button">Home</button></a></li>
+                        <li><a href="Arithmetic.html"><button type="button">Next</button></a></li>
+
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        <a  href="/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                    </label>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+
+<main>
+    <div id="Defining Variables">
+    <h2>Defining Variables</h2>
+    <hr>
+        <p>
+            In programming, a <b>variable</b> is a storage location paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value. 
+            The variable name is used to reference this stored value in a computer program. <br>
+            Imagine you have a backpack where you can store books with each book labeled clearly on the spine. When you need a particular book, you simply look for its label and pull it out. 
+            In Python, a variable is like that label on a book’s spine.
+            <br>
+            Let's say you have an important number like days until vacation, which is 67. You create a variable called <b>"days_until_vacation"</b> and store the number <b>67</b> it.
+            <br>Like this:
+        </p>
+        <pre class="code_snippet_examples">
+<code>days_until_vacation=67</code></pre>
+
+        <p>Now, days_until_end acts like that label on the spine of a book. 
+            Whenever you refer to days_until_vacation in your Python code, 
+            Python knows you are talking about the number 67. This makes it easy to use and update the information in your code. 
+            If the number of days changes, you only need to update the number in one place, 
+            and every reference to days_until_vacation will use the new value.
+        </p>
+        <p>
+            Unlike many other languages  <b>Python is dynamically typed</b> meaning you don't need to explicitly declare a variables data type.
+            Here are a few examples:
+        </p>
+        <pre class="code_snippet_examples">
+<code>age = 25
+name= "Mollie"
+cost=4.5</code></pre>
+        <p>You can use the assigned statement in many ways. 
+            For example:
+        </p>
+        <pre class="code_snippet_examples">
+<code>age = "25"
+name= "Mollie"
+cost=4.5
+print(name + " is " + age + " years old.")
+</code></pre>
+        <p>
+            The output for this would be:
+        </p>
+        <pre class="code_snippet_examples">
+<code>Mollie is 25 years old.
+</code></pre>
+        <p>
+            Try creating a variable, and tying it with another. Then printing it out. 
+        </p>
+        <div class="coding_sandbox">
+            <iframe src="https://trinket.io/embed/python/31f8e434e1" 
+            width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+</div>              
+    <div id="Number types">
+        <h2>Number types</h2>
+        <hr>
+    
+        <div id="integer">
+            <p>
+            <h4>Integer</h4>
+            Computers process data values that represent different types of information. 
+            Each value in a Python program has a specific type, which determines how it's represented in the system and what operations can be applied to it. 
+            The basic types provided by Python are called <b>primitive data types</b>, and include types like numbers, text strings, files, containers, among others.
+            Additionally, Python allows for the creation of custom data types but that is out of the scope of this class.
+            <br>
+            Python recognizes many different numeric data types. An Integer or <b>int</b> is a whole number. 
+            For example, the number of people in a room must be an integer. 
+            This is because you can not have half a person in a room. 
+        </p>
+        </div>
+        <div id="float">
+            <h4>Float</h4>
+            <p>
+                When a value includes a fraction, such as 1.5, Python uses floating-point numbers,
+                referred to as <b>float</b>
+            </p>
+            <pre class="code_snippet_examples">
+<code>cost = 5   # Initially an integer
+cost = 5.5 # Later becomes a float
+cost = "5" # This is possible but not advisable
+cost = 5.0  # Indicates that taxRate may include a fractional part
+</code></pre>
+            </div>
+            </div>
+    <div id="Variable naming rules">
+        <h2>Variable Names</h2>
+        <hr>
+            <p>
+            When creating a variable it is important that you give them a name that explains what it is.
+            whenever you name something in Python, you must follow a few simple rules:
+            <ol>
+                <li>names must start with a letter or _ and the rest of the characters in the name must be a 
+                letter, number, or underscore.</li>
+                <li>You <b>CANNOT</b> use any other symbol. 
+                Spaces are not allowed inside a name either.</li>
+                <li>You <b>CAN</b> use uppercase and lowercase. 
+                Python is case-sensitive.</li>
+                <li>You cannot used <b>Reserved words</b> such as class if as a name. 
+                These are reserved exclusively for Python actions. You can use them within a name like "if_only_i_could_fly"</li>
+            </ol>
+            Python also has a few things you should also do. Though not required.
+            <ol>
+                <li>Its is best to use a descriptive name like "apples_in_bag" instead of using a name like "aib"</li>
+                <li>Most programmers use variables that start with a lowercase letter and uppercase letters to indicate constants.</li>
+            </ol>
+            </p>
+    </div>
+    <div id="Constants">
+        <hr>
+        <p>
+            <h2>Constants</h2>
+            A <b>constant</b> is a variable that SHOULD NOT be changed after it is declared.
+            By using this convention, you provide information to yourself and others behind you that you intend for the variables in all caps to be constant throughout the program. 
+        </p>
+    </div>
+</div>
+
+<div id="chat-widget">
+    <div id="chat-window">
+        <div id="messages"></div>
+        <input type="text" id="user-input" placeholder="Ask your question..." />
+        <button id="send-chat" onclick="sendMessage()">Send</button>
+        <button id="close-chat" onclick="closeChat()">Close</button>
+    </div>
+    <button id="open-chat-btn" onclick="toggleChat()">Ask Question</button>
+    <button id="open-chat-icon-btn" onclick="toggleChat()"><i class="fa-solid fa-plus fa-2xl" id="open-chat-icon"></i></button>
+</div>
+    <script src="/js/theme.js"></script>
+    <script src="/js/sideMenu.js"></script>
+    <script src="/js/aiChatBox.js"></script>
+        
+</main>
+        <footer>
+
+            <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+            Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md"><i class="fa-brands fa-square-github"></i>README</a>
+            </footer>
+    
+</body>
+</html>

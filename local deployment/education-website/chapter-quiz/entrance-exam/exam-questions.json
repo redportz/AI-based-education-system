@@ -1,0 +1,153 @@
+
+[
+    {
+        "question": "What will the output be for this code snippet? Why?",
+        "codeImage": "code-photos/question1.png",
+        "code": "print(bool(0))"
+    },
+    {
+        "question": "What will this code output if entered correctly in a Python interpreter? What does the code do?",
+        "codeImage": "code-photos/question2.png",
+        "code": "print(type(\"Hello, world!\"))"
+    },
+    {
+        "question": "What type will “x” be?",
+        "codeImage": "code-photos/question3.png",
+        "code": "x = 8 / 2\nprint(type(x))"
+    },
+    {
+        "question": "What will this code output?",
+        "codeImage": "code-photos/question4.png",
+        "code": "print(7 // 2)"
+    },
+    {
+        "question": "What will this code output?",
+        "codeImage": "code-photos/question5.png",
+        "code": "print(2 ** 3)"
+    },
+    {
+        "question": "What will this code output?",
+        "codeImage": "code-photos/question6.png",
+        "code": "print(\"Hello\" + \"World\")"
+    },
+    {
+        "question": "What will this code output?",
+        "codeImage": "code-photos/question7.png",
+        "code": "print(len(\"Hello, World!\"))"
+    },
+    {
+        "question": "What will be the value of result?",
+        "codeImage": "code-photos/question8.png",
+        "code": "result = int(10.5) + float(\"5.5\")"
+    },
+    {
+        "question": "What will this code print?",
+        "codeImage": "code-photos/question9.png",
+        "code": "print(\"Python\".upper())"
+    },
+    {
+        "question": "What will the following code return?",
+        "codeImage": "code-photos/question10.png",
+        "code": "print(\"The price is {:.2f}\".format(19))"
+    },
+    {
+        "question": "What will the following code print if x is 15?",
+        "codeImage": "code-photos/question11.png",
+        "code": "if x > 10:\n\tprint(\"yes\")\nelse:\n\tprint(\"no\")"
+    },
+    {
+        "question": "What will this code return if num is 5?",
+        "codeImage": "code-photos/question12.png",
+        "code": "num = 5\nif num % 2 == 0:\n\tresult = \"a\"\nelse:\n\tresult = \"b\"\nprint(result)"
+    },
+    {
+        "question": "What will the output be for this code snippet if temperature is 85?",
+        "codeImage": "code-photos/question13.png",
+        "code": "temperature = 85\nif temperature > 90:\n\tprint(\"It's very hot\")\nelif temperature > 70:\n\tprint(\"It's warm\")\nelse:\n\tprint(\"It's cool\")"
+    },
+    {
+        "question": "What does this code do?",
+        "codeImage": "code-photos/question14.png",
+        "code": "score = 75\nif score < 60:\n\tgrade = \"F\"\nelif score >= 60:\n\tgrade = \"D\"\nelif score >= 70:\n\tgrade = \"C\"\nelif score >= 80:\n\tgrade = \"B\"\nelif score >= 90:\n\tgrade = \"A\"\nprint(grade)"
+    },
+    {
+        "question": "What will the following code output if x is 12 and y is 7?",
+        "codeImage": "code-photos/question15.png",
+        "code": "if x > y and x < 10:\n\tprint(\"Yes\")\nelse:\n\tprint(\"No\")"
+    },
+    {
+        "question": "What will the following code print?",
+        "codeImage": "code-photos/question16.png",
+        "code": "for i in range(3):\n\tprint(i)"
+    },
+    {
+        "question": "What does this code snippet do?",
+        "codeImage": "code-photos/question17.png",
+        "code": "total = 0\nfor i in range(1, 6):\n\ttotal += i\nprint(total)"
+    },
+    {
+        "question": "What will be the output of this code?",
+        "codeImage": "code-photos/question18.png",
+        "code": "n = 5\nwhile n > 0:\n\tprint(n)\n\tn -= 1"
+    },
+    {
+        "question": "What does this code do?",
+        "codeImage": "code-photos/question19.png",
+        "code": "for char in \"Python\":\n\tif char == \"h\":\n\t\tbreak\n\tprint(char)"
+    },
+    {
+        "question": "What will this code output?",
+        "codeImage": "code-photos/question20.png",
+        "code": "for i in range(1, 10):\n\tif i % 2 == 0:\n\t\tcontinue\n\tprint(i)"
+    },
+    {
+        "question": "What does this function return when called with 5?",
+        "codeImage": "code-photos/question21.png",
+        "code": "def function(x):\n\ty = 7\n\tresult = 23\n\treturn x * x\n\nresult = function(5)\nprint(result)"
+    },
+    {
+        "question": "What will be the output of this code?",
+        "codeImage": "code-photos/question22.png",
+        "code": "def greet(name):\n\treturn \"Hello, \" + name + \"!\"\n\nprint(greet(\"Mollie\"))"
+    },
+    {
+        "question": "What does the code print? Explain what the code did.",
+        "codeImage": "code-photos/question23.png",
+        "code": "def function(a, b):\n\treturn a + b\n\nprint(function(3, 4))"
+    },
+    {
+        "question": "What will the following code print?",
+        "codeImage": "code-photos/question24.png",
+        "code": "def function(n):\n\tif n == 0:\n\t\treturn 1\n\telse:\n\t\treturn n * function(n - 1)\n\nprint(function(4))"
+    },
+    {
+        "question": "What does this code return when called with 2 and 3?",
+        "codeImage": "code-photos/question25.png",
+        "code": "def function(a, b):\n\tresult = 1\n\tfor _ in range(b):\n\t\tresult *= a\n\treturn result\n\nprint(function(2, 3))"
+    },
+    {
+        "question": "What will this code output?",
+        "codeImage": "code-photos/question26.png",
+        "code": "x = [1, 2, 3, 4, 5]\nprint(x[2])"
+    },
+    {
+        "question": "What will be the value of result?",
+        "codeImage": "code-photos/question27.png",
+        "code": "items = [\"apples\", \"banana\", \"cherry\"]\nitems.append(\"date\")\nresult = items[-1]\nprint(result)"
+    },
+    {
+        "question": "What does this code do?",
+        "codeImage": "code-photos/question28.png",
+        "code": "numbers = [10, 20, 30, 40, 50]\nnumbers[1:4] = [21, 31, 41]\nprint(numbers)"
+    },
+    {
+        "question": "What will this code print?",
+        "codeImage": "code-photos/question29.png",
+        "code": "a = (\"apples\", \"banana\", \"cherry\")\nfor b in a:\n\tprint(b)"
+    },
+    {
+        "question": "What will the following code return?",
+        "codeImage": "code-photos/question30.png",
+        "code": "values = [1, 2, 3, 4, 5]\ndoubled_values = [x * 2 for x in values]\nprint(doubled_values)"
+    }
+]
