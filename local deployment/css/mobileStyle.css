@@ -1,0 +1,225 @@
+@media (max-width: 768px) {
+    body{
+        font-size: medium;
+        overflow-wrap: break-word;
+    }
+    body img{
+        max-width: 100%;
+    }
+    #online-header-container, #top_bar, footer {
+        display: none;
+    }
+    #mobile-menu-container {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    #mobile-header-container {
+        display: flex;
+        padding: 0px;
+    }
+
+
+    header a {
+        width: 20%;
+        min-width: 60px;
+        max-width: 150px;
+    }
+    #sidebar-menu {
+        display: flex;
+        position: fixed;  /* Changed from absolute to fixed for consistent positioning relative to the viewport */
+        flex-direction: column;
+        justify-content: space-between;
+        right: 0;          /* Start from the right edge */
+        transform: translateX(100%); /* Hide completely off the screen to the right */
+        top: 0;
+        width: 60%;
+        max-width: 150px;
+        height: calc(100vh - 40px);
+        background-color: var(--heading-color);
+        transition: transform 0.5s ease; /* Use transform for the transition */
+        z-index: 1001;
+        padding: 20px 10px; /* Adjusted padding */
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+    
+    .top-content, .middle-content, .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .top-content{
+        color: white;
+    }
+    .switch {
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-content ul {
+    width: 100%; /* Full width of the parent */
+    padding: 0;
+    margin: 0px 0px; /* Adds some vertical spacing */
+    list-style: none; /* Removes bullets */
+    display: inline-block;
+    justify-content: space-around; /* Evenly spaces the buttons horizontally */
+}
+.bottom-content{
+    color: white;
+}
+.bottom-content a{
+    color: white;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    cursor: pointer;
+}
+#sidebar-menu ul {
+    box-shadow: none;
+}
+#sidebar-menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: none;
+    padding: 2px; /* Slightly reduced padding */
+}
+
+#open-chat-btn{
+    display: none;
+}
+
+#open-chat-icon-btn{
+    display: block; /* Show the icon */
+}
+
+
+
+[data-theme="dark"] #chat-widget button {
+    background-color: transparent; /* Ensure buttons have a background color */
+    color: var(--font-color);
+
+}
+
+[data-theme="dark"] #chat-widget #send-chat,#chat-widget #close-chat{
+    background: #333333;
+}
+[data-theme="dark"] #chat-widget #close-chat{
+    background: #333333;
+}
+
+[data-theme="dark"] #open-chat-icon {
+    color: black;
+}
+
+#chat-widget button {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+}
+#chat-widget input[type="text"] {
+    width: calc(100% - 110px);
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-right: 0px;
+    border-radius: 10px;
+}
+
+#chat-widget #send-chat{
+    background-color: white;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    margin-left: 0px;
+}
+#chat-widget #close-chat{
+    background-color: white;
+    border-radius: 10px;
+}
+#open-chat-icon {
+    display: block; /* Show the icon */
+    color: whitesmoke;
+    padding: 0;
+}
+
+#chat-widget {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 45px; /* Adjust width as necessary */
+    background-color: var(--primary-color);
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the button horizontally */
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+#chat-widget.expanded {
+    width: 100%; /* Expanded width */
+    max-width: 300px;
+    height: 100%;
+    max-height: 400px; /* Expanded height */
+}
+
+#messages {
+    height: calc(100% - 40px); /* Adjust the 50px to match the actual height of your close button */
+    overflow-y: auto;
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    padding: 0;
+    border-radius: 50px;
+}
+#chat-window {
+    border-radius: 100px;
+    width: calc(100% - 20px);
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#chat-window{
+    display: none;
+}
+
+
+
+}
+@media (max-width: 250px){
+    header a{
+        display: none;
+    }
+}
+@media (max-width: 150px) {
+    header h3{
+        display: none;
+    }
+    header a{
+        display: block;
+    }
+}
+@media (max-height: 386px) {
+    #sidebar-menu {
+        overflow-y: auto;/* Adds a scrollbar if the content is taller than the sidebar */
+    }
+}
+

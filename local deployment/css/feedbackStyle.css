@@ -1,0 +1,51 @@
+
+[data-theme="dark"] #name {
+    background-color: var(--background-color);
+}
+[data-theme="dark"] #contactMethod {
+    background-color: var(--background-color);
+}
+[data-theme="dark"] #feedback {
+    background-color: var(--background-color);
+}
+
+main{
+    border-radius: 50px;
+}
+#name {
+   border-radius: 4px;
+}
+
+#contactMethod{
+    border-radius: 4px;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    
+
+    #feedback {
+        width: calc(100% - 50px);
+        max-width: 600px;
+    }
+    #name {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    #contactMethod{
+        width: 100%;
+        max-width: 150px;
+    }
+
+    
+}
+@media (max-width: 230px) {
+
+    #feedback {
+        width: calc(100%);
+        max-width: 141px;
+    }
+}

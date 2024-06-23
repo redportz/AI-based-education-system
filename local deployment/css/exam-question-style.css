@@ -1,0 +1,36 @@
+
+
+
+#questions label {
+    color: black;
+    font-weight: bold; /* Optional: to make the labels stand out more */
+}
+
+#answer, #explanation{
+    border-color: #8ED973;
+    border-radius: 40px;
+}
+#nextBtn,#backBtn{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] #answer, [data-theme="dark"] #explanation{
+    background-color: #323232;
+    color: white;
+}
+[data-theme="dark"] #nextBtn, [data-theme='dark'] #backBtn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.course-recommendations-and-feedback-container{
+    display: block;
+    width: auto;
+}
+#course-recommendations{
+    text-align: center;
+}
+
+#reviewHeader{
+    width: 100%;
+}

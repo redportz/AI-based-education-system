@@ -1,0 +1,68 @@
+footer {
+    display: none;
+}
+
+#quizNumber{
+    text-align: center;
+    border-radius: 10px;
+    border-color: rgb(118, 118, 118);
+    border-width: 2px;
+    border-style: inset;
+    height: 50h;
+}
+
+
+.dropdown-container {
+    position: relative;
+    height: 33.6px;
+    margin: 20px auto; /* Center the container horizontally */
+    
+}
+
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    padding-right: 30px; /* Add space for the arrow */
+    cursor: pointer;
+}
+
+.select-wrapper .arrow {
+    position: absolute;
+    right: 10px;
+    pointer-events: none; /* Prevent click events */
+    font-size: 16px;
+    color: #000; /* Arrow color */
+}
+
+#userId{
+    width: 520px;
+}
+
+#final-grade {
+    background-color: transparent;
+    text-align: -webkit-center;
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    #userId{
+        width: calc(100% - 10px) ;
+    }
+};

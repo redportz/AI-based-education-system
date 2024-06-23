@@ -1,0 +1,79 @@
+:root{
+    --arrow-color: #FFFFFF;
+    --chapter-bg-color:#00703C;
+    --chapter-font-color: #FFFFFF;
+    --sub-bg-color: #FFFFFF;
+}
+main{
+    font-size: 25px;
+    padding: 0px;
+}
+header{
+    color: var(--chapter-font-color);
+}
+
+.main-menu li a:hover{
+    text-decoration: underline;
+    
+}
+.main-menu li a{
+    color: var(--bd-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 0px;
+    box-shadow: 2px 2px 20px #000;
+}
+
+ul > li {
+    background-color: var(--chapter-bg-color);
+    color: var(--chapter-font-color);
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+ul > li .arrow {
+    position: absolute;
+    right:10px;
+    font: 16px;
+    transform: rotate(180deg);
+    color: var(--arrow-color);
+}
+
+ul > li.chapter.open .arrow {
+    transform: rotate(0);
+}
+
+ul > li.chapter ul {
+    display: none;
+}
+
+ul > li.chapter.open ul {
+    display: block;
+}
+
+ul > li.chapter ul li {
+    background-color: var(--sub-bg-color);
+    padding: 10px;
+    border: none;
+}
+
+ul > li.chapter ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+ul > li.chapter ul li a:hover {
+    text-decoration: underline;
+}
+[data-theme="dark"] {
+    --arrow-color:#00703C;
+    --chapter-bg-color: #1F2022;
+    --sub-bg-color: #000;
+}
+

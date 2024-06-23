@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Based Education</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/frontPage.css">
+        <link rel="stylesheet" href="/css/mobileStyle.css">
+        
+        <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div id="top_bar">
+        <!-- Back button and home button grouped for alignment -->
+        <div class="button-group">
+        </div>
+
+        <!-- Dark Mode Switch -->
+        <label class="switch">
+            Dark Mode <!-- Text to the left of the switch -->
+            <input type="checkbox" class="dark-mode-switch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- main header -->
+        <header id="online-header-container">
+            <div>   
+                <h1><a href="/index.html"><img src="/images/tacoLogo.png" style="vertical-align: middle;"></a>
+                <span style="vertical-align: middle;">TACo about Python</span></h1>
+            </div>
+        </header>
+        
+
+        <!-- mobile header and side bar -->
+        <div id="mobile-menu-container">
+            <header id="mobile-header-container">
+                <a href="/index.html"><img src="/images/tacoLogo.png" alt="TACo about Python logo"></a>
+                <h3>TACo about Python</h3>
+                <button id="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+            </header>
+            <div id="sidebar-menu" class="hidden">
+            
+                <div class="top-content"> <!-- Container for top content -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <label class="switch">
+                                    Dark Mode <br>
+                                    <input type="checkbox" class="dark-mode-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Container for buttons -->
+                <div class="middle-content"> 
+                    <ul>
+                        <!-- place for buttons -->
+                        <!-- put them inside <li> </li> -->
+
+                    </ul>
+                </div>
+            
+                <div class="bottom-content"> <!-- Container for bottom content -->
+                    <label>
+                        Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">
+                        <i class="fa-brands fa-square-github"></i> README</a>
+                        <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                    </label>
+                </div>
+            </div>
+            <!-- <div id="overlay"></div> -->
+        </div>
+
+
+<main>
+    <div id="overlay"></div>
+    <ul class="main-menu">
+        <li onclick="entranceExam()">Entrance Exam</a></li>
+        <li class="chapter">Chapter 1
+            <span class="arrow"><i class="fa-solid fa-up-long"></i></span>
+        <ul>
+                <li><a href="/education-website/Chapter 1/Anatomy of computers.html">1. Anatomy of Computers</a></li>
+                <li><a href="/education-website/Chapter 1/History of Python.html">2 History of Python</a></li>
+                <li><a href="/education-website/Chapter 1/Installation.html">3. Configuring the Development Environment</a></li>
+                <li><a href="/education-website/Chapter 1/Print Statements.html">4. Print Statements</a></li>
+                <li><a href="/education-website/Chapter 1/Errors.html">5. Errors</a></li>
+            </ul>
+        </li>
+        <li class="chapter">Chapter 2
+            <span class="arrow"><i class="fa-solid fa-up-long"></i></span>
+            <ul>
+                <li><a href="/education-website/Chapter 2/Variables.html">1. Variables</a></li>
+                <li><a href="/education-website/Chapter 2/Arithmetic.html">2. Arithmetic</a></li>
+                <li><a href="/education-website/Chapter 2/Strings.html">3. Strings</a></li>
+                <li><a href="/education-website/Chapter 2/Input_and_output.html">4. Input and Output</a></li>
+                <li><a href="/education-website/chapter-quiz/quiz.html">Quiz</a></li>
+                
+            </ul>
+        </li>
+        <li class="chapter">Chapter 3
+            <span class="arrow"><i class="fa-solid fa-up-long"></i></span>
+            <ul><li><a href="">Coming soon</a></li></ul>
+        </li>
+        <li class="chapter">Chapter 4
+            <span class="arrow"><i class="fa-solid fa-up-long"></i></span>
+            <ul><li><a href="">Coming soon</a></li></ul>
+        </li>
+        <li class="chapter">Chapter 5
+            <span class="arrow"><i class="fa-solid fa-up-long"></i></span>
+            <ul><li><a href="">Coming soon</a></li></ul>
+        </li>
+        <li class="chapter">Chapter 6
+            <span class="arrow"><i class="fa-solid fa-up-long"></i></span>
+            <ul><li><a href="">Coming soon</a></li></ul>
+        </li>
+    </ul>
+</main>
+    <script src="/js/sideMenu.js"></script>
+    <script src="/js/frontPage.js"></script>
+    <script src="/js/theme.js"></script>
+    <script>
+        
+    </script>
+    
+    <footer id="footer">
+        <div id="Copyright-container">
+            Copyright &copy; Eric Zabala. <a target="_blank" href="https://github.com/redportz/AI-Based-Education-System/blob/main/README.md">README <i class="fa-brands fa-square-github"></i> </a>
+        </div>
+        <div id="feedback-container">
+            <a  href="/education-website/user-feedback/feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+        </div>
+    </footer>
+    </body>
+</html>
